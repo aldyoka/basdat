@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    padding: 35px 100px 0;
+    justify-content: flex-end;
+}
+
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    margin: 0 40px;
+}
+
+header nav li:first-child {
+    margin-left: 0;
+}
+
+header nav li:last-child {
+    margin-right: 0;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0B63DC;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.banner-text {
+    text-align: justify;
+    max-width: 600px;
+    position: absolute;
+    padding: 20px 100px;
+    top: 200px;
+    right: 0;
+}
+
+.banner-text h1 {
+    margin-bottom: 30px;
+    font-size: 40pt;
+    text-transform: uppercase;
+}
+
+.banner-area {
+    position: relative;
+    width: 100%;
+    padding: 20px 100px;
+    height: 700px;
+
+}
+
+.banner-area .banner-img {
+    background-image: url('../img/background.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    z-index: -1;
+    object-position: center;
+}
+
+.statistik-area {
+    width: 100%;
+    padding: 60px 100px;
+}
+
+.statistik-area h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-size: 20pt;
+}
+
+.kotak {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 15pt;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.kasus-statistik {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kasus-statistik h3 {
+    font-size: 20pt;
+}
+
+.positif {
+    background-color: #0066CF;
+}
+
+.sembuh {
+    background-color: aqua;
+}
+
+.meninggal {
+    background-color: #FF2136;
+}
+
+.kolom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.baris {
+    display: flex;
+}
+
+.judul {
+    background-color: antiquewhite;
+}
+
+.data {
+    border-width: 1;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-bottom-style: solid;
+}
+
+.sub {
+    flex-basis: 25%;
+}
+
+/* pencarian */
+.urutkan {
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.baris-select {
+    display: flex;
+}
+
+/* Edukasi */
+
+.edukasi-area {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    padding: 110px 100px;
+}
+
+.edukasi-area h1 {
+    margin-bottom: 40px;
+}
+
+.edukasi-img {
+    background-image: url('../img/studi.jpg');
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.edukasi-kolom {
+    display: flex;
+    flex-direction: column;
+}
+
+.edukasi-baris {
+    display: flex;
+}
+
+.img-sub {
+    margin-bottom: 40px;
+    width: 80px;
+    height: 80px;
+    background-size: 70px 70px;
+    object-position: center;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img-sub-text {
+    margin-left: 30px;
+    max-width: 580px;
+    text-align: justify;
+}
+
+/* footer */
+.footer-area {
+    width: 100%;
+    height: 150px;
+    background-color: #0066CF;
+}
+
+.kontak {
+    float: right;
+    padding: 30px 100px;
+    color: white;
+}
+
+.nomor {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.nomor-kotak {
+    border-width: 1;
+    border-color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+}
